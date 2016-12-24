@@ -23,7 +23,7 @@ class GroupsController < ApplicationController
     else
       render :edit
     end
-  end
+end
 
   def destroy
     @group.destroy
@@ -52,7 +52,7 @@ def join
      else
        render :new
      end
-
+  end
 
   def quit
     @group = Group.find(params[:id])
